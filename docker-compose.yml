@@ -1,0 +1,31 @@
+# Production-shaped local infrastructure for this service: a real PostgreSQL
+# instance. This file documents how the production `application.yml` profile
+# is meant to be stood up; it is not what produced the measured numbers in
+# the README. Docker Desktop's daemon was not running in the environment this
+# project was built in, so every measured number in this repository comes
+# from tests and the demo run that use an in-memory H2 database in PostgreSQL
+# compatibility mode instead. See README.md, "Honest framing, up front".
+#
+# To actually run the service against this stack:
+#   docker compose up -d
+#   export REBALANCER_DB_URL=jdbc:postgresql://localhost:5432/goal_rebalancer
+#   export REBALANCER_DB_USERNAME=rebalancer_app
+#   export REBALANCER_DB_PASSWORD=rebalancer_app_local_only
+#   export REBALANCER_DB_DRIVER=org.postgresql.Driver
+#   mvn spring-boot:run
+version: "3.8"
+services:
+  postgres:
+    image: postgres:16
+    container_name: goal-based-portfolio-rebalancer-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: goal_rebalancer
+      POSTGRES_USER: rebalancer_app
+      POSTGRES_PASSWORD: rebalancer_app_local_only
+    volumes:
+      - goal_rebalancer_pgdata:/var/lib/postgresql/data
+
+volumes:
+  goal_rebalancer_pgdata:

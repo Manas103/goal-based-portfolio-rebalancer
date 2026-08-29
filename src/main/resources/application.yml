@@ -1,0 +1,33 @@
+# Production wiring: a real PostgreSQL instance. Tests and `mvn spring-boot:run`
+# never load this file for the measured numbers in the README; they use
+# src/test/resources/application.yml (H2 in PostgreSQL-compatibility mode) and
+# this file's own default profile falls back to the same H2 settings below so
+# `mvn spring-boot:run` still serves the console without a real database, since
+# no standalone PostgreSQL instance is reachable in the build environment this
+# project was built in. See the README's "honest framing" section and
+# docker-compose.yml for the real stack.
+spring:
+  application:
+    name: goal-based-portfolio-rebalancer
+  datasource:
+    url: ${REBALANCER_DB_URL:jdbc:h2:mem:goal_rebalancer;MODE=PostgreSQL;DB_CLOSE_DELAY=-1}
+    username: ${REBALANCER_DB_USERNAME:sa}
+    password: ${REBALANCER_DB_PASSWORD:}
+    driver-class-name: ${REBALANCER_DB_DRIVER:org.h2.Driver}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+
+rebalancer:
+  seed-on-startup: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.manas.rebalancer: INFO

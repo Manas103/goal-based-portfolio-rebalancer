@@ -1,0 +1,36 @@
+<main>
+  <h1>Goal-Based Portfolio Rebalancer &mdash; Disclosure Ledger</h1>
+
+  <div class="filter-bar">
+    <input
+      type="text"
+      placeholder="Filter by account id (e.g. BREACH-EQ1)"
+      [(ngModel)]="accountIdFilter"
+      (keyup.enter)="filterByAccount()" />
+    <button (click)="filterByAccount()">Filter</button>
+    <button (click)="refresh()">Show all</button>
+  </div>
+
+  <p class="error" *ngIf="loadError() as err">{{ err }}</p>
+
+  <p *ngIf="!loadError() && proposals().length === 0">No proposals on the ledger for this view.</p>
+
+  <table *ngIf="proposals().length > 0">
+    <thead>
+      <tr>
+        <th>Account</th>
+        <th>Triggering band(s)</th>
+        <th>Proposed at</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let proposal of proposals()">
+        <td>{{ proposal.accountId }}</td>
+        <td>{{ proposal.triggeringBands }}</td>
+        <td>{{ proposal.proposedAt }}</td>
+        <td>{{ proposal.explanation }}</td>
+      </tr>
+    </tbody>
+  </table>
+</main>

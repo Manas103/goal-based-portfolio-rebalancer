@@ -1,0 +1,26 @@
+# Test / measurement profile: an in-memory H2 database in PostgreSQL
+# compatibility mode. No real PostgreSQL is reachable in this build
+# environment; this is the same precedent used by network-token-vault and
+# card-authorization-gateway elsewhere in this portfolio. Every measured
+# number in the README comes from this profile.
+spring:
+  datasource:
+    url: jdbc:h2:mem:goal_rebalancer_test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+
+rebalancer:
+  seed-on-startup: false
+
+logging:
+  level:
+    com.manas.rebalancer: INFO
+    org.hibernate: WARN

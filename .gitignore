@@ -1,0 +1,25 @@
+# Maven build output (backend). Regenerate with: mvn clean package
+target/
+*.class
+
+# Angular build output and deps (console). Regenerate with: npm install && npm run build
+console/node_modules/
+console/dist/
+console/.angular/
+console/out-tsc/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

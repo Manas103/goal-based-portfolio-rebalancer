@@ -1,0 +1,21 @@
+# Regenerate with: npm install
+/node_modules
+
+# Regenerate with: npm run build
+/dist
+/out-tsc
+/.angular/cache
+
+# Misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# IDE
+.idea/
+.vscode/

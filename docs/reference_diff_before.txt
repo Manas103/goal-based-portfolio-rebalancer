@@ -1,0 +1,47 @@
+ReferenceOracleDiffTest: compared 5000 accounts, 988 disagreements
+RANDOM-00002: real=[eq=-4022.93,bo=40229.28,ca=-36206.35] reference=[eq=-4022.93,bo=40229.28,ca=-36206.34]
+RANDOM-00006: real=[eq=12843.41,bo=25686.82,ca=-38530.23] reference=[eq=12843.41,bo=25686.82,ca=-38530.22]
+RANDOM-00009: real=[eq=-17600.27,bo=-7822.34,ca=25422.61] reference=[eq=-17600.27,bo=-7822.34,ca=25422.60]
+RANDOM-00015: real=[eq=6714.03,bo=60426.30,ca=-67140.33] reference=[eq=6714.03,bo=60426.30,ca=-67140.34]
+RANDOM-00018: real=[eq=-12279.54,bo=42978.37,ca=-30698.83] reference=[eq=-12279.54,bo=42978.37,ca=-30698.84]
+RANDOM-00025: real=[eq=53661.45,bo=-59623.83,ca=5962.38] reference=[eq=53661.45,bo=-59623.83,ca=5962.39]
+RANDOM-00027: real=[eq=10336.06,bo=-14470.49,ca=4134.43] reference=[eq=10336.06,bo=-14470.49,ca=4134.42]
+RANDOM-00030: real=[eq=12972.09,bo=-25944.19,ca=12972.10] reference=[eq=12972.09,bo=-25944.19,ca=12972.09]
+RANDOM-00032: real=[eq=57629.12,bo=-23051.65,ca=-34577.47] reference=[eq=57629.12,bo=-23051.65,ca=-34577.48]
+RANDOM-00038: real=[eq=-4923.77,bo=-4923.77,ca=9847.54] reference=[eq=-4923.77,bo=-4923.77,ca=9847.55]
+RANDOM-00045: real=[eq=0.00,bo=38343.91,ca=-38343.91] reference=[eq=0.00,bo=38343.91,ca=-38343.90]
+RANDOM-00059: real=[eq=69600.76,bo=-55680.60,ca=-13920.16] reference=[eq=69600.76,bo=-55680.60,ca=-13920.15]
+RANDOM-00060: real=[eq=-19552.54,bo=-29328.81,ca=48881.35] reference=[eq=-19552.54,bo=-29328.81,ca=48881.36]
+RANDOM-00061: real=[eq=12129.66,bo=18194.50,ca=-30324.16] reference=[eq=12129.66,bo=18194.50,ca=-30324.15]
+RANDOM-00066: real=[eq=14489.78,bo=-24149.62,ca=9659.84] reference=[eq=14489.78,bo=-24149.62,ca=9659.85]
+RANDOM-00099: real=[eq=54210.37,bo=54210.37,ca=-108420.74] reference=[eq=54210.37,bo=54210.37,ca=-108420.75]
+RANDOM-00101: real=[eq=58083.56,bo=-7260.44,ca=-50823.12] reference=[eq=58083.56,bo=-7260.44,ca=-50823.11]
+RANDOM-00102: real=[eq=4329.79,bo=3092.71,ca=-7422.50] reference=[eq=4329.79,bo=3092.71,ca=-7422.49]
+RANDOM-00103: real=[eq=48079.46,bo=-4807.95,ca=-43271.51] reference=[eq=48079.46,bo=-4807.
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.119 s <<< FAILURE! -- in com.manas.rebalancer.engine.ReferenceOracleDiffTest
+[ERROR] com.manas.rebalancer.engine.ReferenceOracleDiffTest.referenceRebalancerAgreesExactlyWithTheRealEngine -- Time elapsed: 0.097 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 988 of 5000 accounts disagreed with the reference rebalancer ==> expected: <0> but was: <988>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at com.manas.rebalancer.engine.ReferenceOracleDiffTest.referenceRebalancerAgreesExactlyWithTheRealEngine(ReferenceOracleDiffTest.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Failures: 
+[ERROR]   ReferenceOracleDiffTest.referenceRebalancerAgreesExactlyWithTheRealEngine:62 988 of 5000 accounts disagreed with the reference rebalancer ==> expected: <0> but was: <988>
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project goal-based-portfolio-rebalancer: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\Manas\Downloads\Total Job Application process flow\projects\goal-based-portfolio-rebalancer\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
