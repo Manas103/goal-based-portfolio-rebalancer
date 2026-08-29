@@ -1,17 +1,17 @@
 - Generating browser application bundles (phase: setup)...
 ✔ Browser application bundle generation complete.
-[32m29 08 2026 12:14:47.793:INFO [karma-server]: [39mKarma v6.4.4 server started at http://localhost:9876/
-[32m29 08 2026 12:14:47.794:INFO [launcher]: [39mLaunching browsers PlaywrightHeadlessChrome with concurrency unlimited
-[32m29 08 2026 12:14:47.814:INFO [launcher]: [39mStarting browser ChromeHeadless
-[32m29 08 2026 12:14:49.061:INFO [Chrome Headless 151.0.0.0 (Windows 10)]: [39mConnected on socket J3K32gWWGH9vJJeMAAAB with id 28398550
+[32m29 08 2026 12:20:14.613:INFO [karma-server]: [39mKarma v6.4.4 server started at http://localhost:9876/
+[32m29 08 2026 12:20:14.615:INFO [launcher]: [39mLaunching browsers PlaywrightHeadlessChrome with concurrency unlimited
+[32m29 08 2026 12:20:14.630:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m29 08 2026 12:20:15.982:INFO [Chrome Headless 151.0.0.0 (Windows 10)]: [39mConnected on socket ruvU7pJgNhG3u03_AAAB with id 41956222
 Chrome Headless 151.0.0.0 (Windows 10): Executed 0 of 6[32m SUCCESS[39m (0 secs / 0 secs)
-[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 1 of 6[32m SUCCESS[39m (0 secs / 0.008 secs)
-[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 2 of 6[32m SUCCESS[39m (0 secs / 0.009 secs)
-[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 3 of 6[32m SUCCESS[39m (0 secs / 0.042 secs)
-[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 4 of 6[32m SUCCESS[39m (0 secs / 0.045 secs)
+[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 1 of 6[32m SUCCESS[39m (0 secs / 0.038 secs)
+[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 2 of 6[32m SUCCESS[39m (0 secs / 0.042 secs)
+[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 3 of 6[32m SUCCESS[39m (0 secs / 0.044 secs)
+[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 4 of 6[32m SUCCESS[39m (0 secs / 0.046 secs)
 [1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 5 of 6[32m SUCCESS[39m (0 secs / 0.047 secs)
-[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 6 of 6[32m SUCCESS[39m (0 secs / 0.049 secs)
-[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 6 of 6[32m SUCCESS[39m (0.052 secs / 0.049 secs)
+[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 6 of 6[32m SUCCESS[39m (0 secs / 0.048 secs)
+[1A[2KChrome Headless 151.0.0.0 (Windows 10): Executed 6 of 6[32m SUCCESS[39m (0.108 secs / 0.048 secs)
 [32mTOTAL: 6 SUCCESS[39m
 ✔ Browser application bundle generation complete.
 ✔ Browser application bundle generation complete.
