@@ -8,6 +8,11 @@ console/dist/
 console/.angular/
 console/out-tsc/
 
+# Python venv and caches (optimizer). Regenerate with: cd optimizer && python -m venv venv && pip install -r requirements.txt
+optimizer/venv/
+optimizer/.pytest_cache/
+optimizer/**/__pycache__/
+
 # IDE
 .idea/
 *.iml

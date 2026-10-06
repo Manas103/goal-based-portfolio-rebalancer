@@ -1,0 +1,10 @@
+{
+  "periods": 12,
+  "accounts": 200,
+  "baseline_turnover_annualized_pct": 86.08297257607636,
+  "optimized_turnover_annualized_pct": 44.63865130110186,
+  "netting_reduction_pct": 14.870157595499078,
+  "optimized_gross_notional": 32270326.63466944,
+  "optimized_net_notional": 27471678.207511783,
+  "allocation_checks_performed": 48
+}
